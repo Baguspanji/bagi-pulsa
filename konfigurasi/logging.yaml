@@ -1,0 +1,32 @@
+version: 1
+disable_existing_loggers: True
+formatters:
+    simple:
+        format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+
+handlers:
+    console:
+        class: logging.StreamHandler
+        level: DEBUG
+        formatter: simple
+        stream: ext://sys.stdout
+
+    file_handler:
+        class: logging.handlers.TimedRotatingFileHandler
+        level: INFO
+        formatter: simple
+        filename: logs/Rekonsiliasi-Info.log
+        encoding: utf8
+        when: D
+
+    err_file_handler:
+        class: logging.handlers.TimedRotatingFileHandler
+        level: ERROR
+        formatter: simple
+        filename: logs/Rekonsiliasi-Error.log
+        encoding: utf8
+        when: D
+
+root:
+    level: INFO
+    handlers: [console, file_handler, err_file_handler]

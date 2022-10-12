@@ -1,0 +1,126 @@
+{% extends "layouts/base-template.html" %}
+{% block title %}Service{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+<style>
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+{% endblock stylesheets %}
+{% block content %}
+
+<section class="content-header">
+    <h5>
+        Service
+    </h5>
+    <!-- <ol class="breadcrumb">
+
+        Dashboard
+    	<?php 
+    	foreach ($nav as $breadcrumb) {
+    		echo '<li><a href="#">'.$breadcrumb.'</a></li>';
+    	}
+    	 ?> 
+    </ol> -->
+    <br>         
+</section>
+
+<div class="row">
+  {% for menu in message %}
+
+  {% if menu.nama == "chat" %}
+    <div class="col-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <!--<img id="main-logo" class="center" src="{{ url_for('static', filename='assets/images/Axis.png') }}" style="width: 100px; height: 70px;">-->
+          <h2 class="text-center">Chat</h2>
+          <!-- Rounded switch -->
+          <label class="switch center mt-5">
+              {% if menu.status == 1 %}
+              <input class="provider" name="{{ menu.id }}" type="checkbox" value="0" checked>
+              {% else %}
+              <input class="provider" name="{{ menu.id }}" value="1" type="checkbox">
+              {% endif %}
+              <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% endfor %}
+</div>
+{% endblock content %}
+
+<!--tambahkan custom js disini-->
+<!-- jQuery UI 1.11.2 -->
+{% block javascripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+<script src="{{ url_for('service_blueprint.static', filename='service.js') }}" type="text/javascript"></script>
+
+{% endblock javascripts %}

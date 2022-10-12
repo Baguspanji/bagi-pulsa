@@ -1,0 +1,119 @@
+{% extends "layouts/base.html" %}
+{% block title %} Login {% endblock %}
+{% block stylesheets %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- <style>
+.alert{
+    margin-top: -3%;
+    margin-left: 25%;
+    transition: margin-top 0.4s ease;
+    width: 50%;
+    border-radius: 25px;
+    }
+</style> -->
+{% endblock stylesheets %}
+{% block notif %}
+  <!-- <div class="alert mb-0" role="alert">
+    <i class="material-icons">info</i>&nbsp;
+    <span class="info-desc"></span>
+  </div> -->
+{% endblock %}
+{% block content %}
+<body class="login-page" style="background: linear-gradient(to bottom, #272E36 50%, #ECB802 50%);" >
+        <div class="login-box" style=" width: 500px; margin: 10%; width: 80%; margin-top: 2%;">
+            <div class="login-logo" style="margin-bottom: 6%;">
+                <!-- <p><b style="color: white;">GDC Admin</b></p>
+                 <p style="margin-top: -20px;color: white;">Web Admin</p> -->
+                 {% if message != None %}
+                 <input type="hidden" id="alert" value="{{ message }}">
+                 {% endif %}
+                 <img id="main-logo" class="d-inline-block align-top mr-1" width="150" src="{{ url_for('static', filename='assets/images/ic_bagipulsa.png') }}">
+
+            </div><!-- /.login-logo -->
+            <div class="login-box-body" style="border-radius: 10px;padding: 4%;">
+                <h3 class="" style="color: #2E3840; font-weight: bold;">SELAMAT DATANG</h3>
+                <hr style="width: 6%; text-align: right; border-top: 4px solid #2e3840; margin: inherit; margin-bottom: 20px;">
+                <!-- jika gagal -->
+                {% if msg %}
+                    <div class="alert alert-danger alert-dismissible">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                      <h4><i class="icon fa fa-ban"></i> Error!</h4>
+                      <p id="fail">{{ msg | safe }}</p>
+                    </div>
+                {% endif %}
+
+                <form id="captcha-form" name="captcha-form"  action="" method="post">
+                    <label style="font-weight: normal;">Username</label>
+                    <div class="input-group">
+                        <span class="input-group-addon" style="border-color: #fff; padding-left: unset;">
+                            <img
+                            class="img_custom"
+                            src="https://i.postimg.cc/HkFp0qpv/ic-user.png"
+                            width="17"
+                            alt="nik"
+                            />
+                        </span>
+                        <input id="nik" type="text" class="form-control" name="username" placeholder="Username" style="border-color: #2e3840; border-radius: 4px !important;">
+                    </div>
+                    <label style="font-weight: normal; margin-top: 15px;">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-addon" style="border-color: #fff; padding-left: unset;">
+                            <img
+                            class="img_custom"
+                            src="https://i.postimg.cc/sxBBDpKv/ic-lock.png"
+                            width="15"
+                            alt="password"
+                            />
+                        </span>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Password" style="border-color: #2e3840; border-radius: 4px !important;">
+                    </div>
+                    <!-- <div class="input-group">
+                        <label>NIK</label>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope form-control-feedback"></i></span>
+                        <input type="text" class="form-control" placeholder="NIK" name="username" autocomplete="off" style="border-color: #2e3840;"/>
+                    </div> -->
+                    <!-- <div class="form-group has-feedback">
+                        <label>Kata Sandi</label>
+                        <input type="password" class="form-control" placeholder="Password" name="password" autocomplete="off" style="border-color: #2e3840;"/>
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div> -->
+                    <!-- <div class="form-group has-feedback">
+                        <label class="" for="captcha">*Please enter the verication code shown below.</label>
+                        <div id="captcha-wrap">
+                            <img  style="cursor:pointer;" src="{{ url_for('static', filename='assets/img/captcha/{0}'.format(gambar)) }}" alt="refresh captcha" id="refresh-captcha" />
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Verification Code" id="captcha"  name="captcha" autocomplete="off"/>
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                        <input type="hidden" name='text-hash' value="{{ text_hash }}" />
+                    </div> -->
+                    <div class="row" style="margin-top: 30px;">
+                        <div class="col-xs-12">
+                        </div>
+                        <div class="col-xs-12">
+                            <button type="submit" class="btn pull-right" style="background: #ECB802; color: white; width: 10%;">Masuk</button>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- /.login-box-body -->
+        </div> <!-- /.login-box -->
+{% endblock content %}
+<script src="{{ url_for('static', filename='assets/js/vendor/modernizr.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/vendor/plugins.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/vendor/underscore.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/captcha/main.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/sweetalert.min.js') }}"></script>
+{% block javascripts %}
+<script>
+    var hasil = $('#alert').val();
+    if (hasil == undefined){
+        hasil = ""
+        }
+    $(document).ready(function(){
+        if (hasil != ""){
+            swal(''+hasil+'', "", "warning");
+        }
+    });
+</script>
+{% endblock javascripts %}

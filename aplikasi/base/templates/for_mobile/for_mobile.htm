@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KETENTUAN PENGGUNAAN</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      body {
+        font-family: 'Cambria' !important;
+      }
+      table {
+          width: 100% !important;
+      }
+    </style>
+</head>
+<body>
+    <input type="hidden" id="hasil" value="{{ message }}">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-12">
+                <div id="wadah">
+                    <!-- isi -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+$( document ).ready(function() {
+    var text = $('#hasil').val();
+    var htmlObject = $(text);
+    $("#wadah").append(htmlObject);
+});
+</script>
