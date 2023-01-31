@@ -5,4 +5,4 @@ application = app
 
 if __name__ == '__main__':
     
-    app.run(host='localhost', debug=True)
+    app.run(host='103.163.138.24', debug=True)

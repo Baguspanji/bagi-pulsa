@@ -1,0 +1,67 @@
+2022-11-01 21:03:36,478 - root - ERROR - (2003, "Can't connect to MySQL server on '103.163.138.24' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/limaope1/bagi-pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaope1/bagi-pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaope1/bagi-pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '103.163.138.24' ([Errno 111] Connection refused)")
+2022-11-01 21:03:36,482 - root - ERROR - (2003, "Can't connect to MySQL server on '103.163.138.24' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/limaope1/bagi-pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaope1/bagi-pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaope1/bagi-pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '103.163.138.24' ([Errno 111] Connection refused)")
+2022-11-01 21:03:36,484 - aplikasi - ERROR - Exception on /master/banner [GET]
+Traceback (most recent call last):
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaope1/virtualenv/bagi-pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaope1/bagi-pulsa/aplikasi/master/routes.py", line 405, in get_banner
+    message = get_banner.to_dict(orient='records')
+AttributeError: 'NoneType' object has no attribute 'to_dict'

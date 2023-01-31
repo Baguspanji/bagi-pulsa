@@ -30,6 +30,7 @@ type="text/css" />
                     <thead class="">
                         <tr>
                             <th>No</th>
+                            <th>ID Transaksi</th>
                             <th>No. Handphone</th>
                             <th>Nominal Pulsa</th>
                             <th>Nama BANK</th>
@@ -46,6 +47,7 @@ type="text/css" />
                         {% for menu in message %}                                               
                         <tr>
                         <td>{{ loop.index }}</td>
+                        <td>{{ menu.kode_transaksi }}</td>
                         <td>{{ menu.no_hp }}</td>
                         <td>{{ menu.nominal_pulsa }}</td>
                         <td>{{ menu.nama_bank }}</td>

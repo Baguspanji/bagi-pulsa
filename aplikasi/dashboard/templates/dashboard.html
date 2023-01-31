@@ -94,22 +94,22 @@ input:checked + .slider:before {
   {% for menu in message %}
 
   {% if menu.nama_provider == "axis" %}
-    <div class="col-4">
-      <div class="card mb-4">
-        <div class="card-body">
-          <img id="main-logo" class="center" src="{{ url_for('static', filename='assets/images/Axis.png') }}" style="width: 100px; height: 70px;">
+    <!--<div class="col-4">-->
+    <!--  <div class="card mb-4">-->
+    <!--    <div class="card-body">-->
+    <!--      <img id="main-logo" class="center" src="{{ url_for('static', filename='assets/images/Axis.png') }}" style="width: 100px; height: 70px;">-->
           <!-- Rounded switch -->
-          <label class="switch center mt-4">
-              {% if menu.status_provider == 1 %}
-              <input class="provider" name="{{ menu.kode_provider }}" type="checkbox" value="0" checked>
-              {% else %}
-              <input class="provider" name="{{ menu.kode_provider }}" value="1" type="checkbox">
-              {% endif %}
-              <span class="slider round"></span>
-          </label>
-        </div>
-      </div>
-    </div>
+    <!--      <label class="switch center mt-4">-->
+    <!--          {% if menu.status_provider == 1 %}-->
+    <!--          <input class="provider" name="{{ menu.kode_provider }}" type="checkbox" value="0" checked>-->
+    <!--          {% else %}-->
+    <!--          <input class="provider" name="{{ menu.kode_provider }}" value="1" type="checkbox">-->
+    <!--          {% endif %}-->
+    <!--          <span class="slider round"></span>-->
+    <!--      </label>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</div>-->
   {% endif %}
   
   {% if menu.nama_provider == "indosat" %}
@@ -171,7 +171,7 @@ input:checked + .slider:before {
     <div class="col-4">
       <div class="card mb-4">
         <div class="card-body">
-            <img id="main-logo" class="center" src="{{ url_for('static', filename='assets/images/Xl.png') }}" style="width: 100px; height: 70px;">
+            <img id="main-logo" class="center" src="{{ url_for('static', filename='assets/images/Xl.jpeg') }}" style="width: 100px; height: 70px;">
             <label class="switch center mt-4">
                 {% if menu.status_provider == 1 %}
                 <input class="provider" name="{{ menu.kode_provider }}" type="checkbox" value="0" checked>

@@ -1,0 +1,1623 @@
+2022-08-18 22:37:45,236 - root - ERROR - (2003, "Can't connect to MySQL server on '103.163.138.27' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '103.163.138.27' ([Errno 111] Connection refused)")
+2022-08-18 22:37:45,242 - root - ERROR - (2003, "Can't connect to MySQL server on '103.163.138.27' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '103.163.138.27' ([Errno 111] Connection refused)")
+2022-08-18 22:37:45,242 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 299, in post_akun_bank
+    hsl_data_bank = data_bank.to_dict(orient='records')
+AttributeError: 'NoneType' object has no attribute 'to_dict'
+2022-08-18 22:37:45,326 - root - ERROR - (2003, "Can't connect to MySQL server on '103.163.138.27' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '103.163.138.27' ([Errno 111] Connection refused)")
+2022-08-18 22:37:45,327 - root - ERROR - (2003, "Can't connect to MySQL server on '103.163.138.27' ([Errno 111] Connection refused)")
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 614, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/opt/alt/python37/lib64/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '103.163.138.27' ([Errno 111] Connection refused)")
+2022-08-18 22:37:45,328 - aplikasi - ERROR - Exception on /master/list_rate [GET]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 60, in rate
+    message = data_rate.to_dict(orient='records')
+AttributeError: 'NoneType' object has no attribute 'to_dict'
+2022-08-19 03:12:48,051 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-19 03:12:48,052 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-19 03:12:48,052 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-19 07:20:09,240 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 63, in db_exec
+    with db_con() as con:
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-19 11:12:03,627 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-19 11:12:03,631 - aplikasi - ERROR - Exception on /master/status_service [GET]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 148, in status_service
+    data = data_status.to_dict(orient='records')
+AttributeError: 'NoneType' object has no attribute 'to_dict'
+2022-08-19 18:45:51,474 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-20 09:57:58,515 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-20 13:31:28,629 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-20 16:56:17,555 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 63, in db_exec
+    with db_con() as con:
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-20 22:04:02,066 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-20 22:04:10,998 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-20 22:04:12,811 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-20 22:04:13,674 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-20 22:04:13,790 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-20 22:04:13,924 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-21 09:10:52,033 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-21 12:39:32,741 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-21 12:39:37,256 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-22 02:50:22,512 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-22 14:58:04,751 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 10:07:28,351 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 10:07:30,062 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 10:07:30,063 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 10:07:39,505 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 10:07:39,509 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 20:14:05,999 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 20:14:08,371 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 20:15:53,934 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 20:34:39,822 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 20:34:41,467 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 20:36:36,040 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 20:37:34,440 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-23 20:37:36,474 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-24 15:46:21,335 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-24 15:46:25,743 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-24 15:46:54,476 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-24 22:15:22,648 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-24 22:15:22,652 - aplikasi - ERROR - Exception on /master/get_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 342, in get_akun_bank
+    message = get_akun_bank.to_dict(orient='records')
+AttributeError: 'NoneType' object has no attribute 'to_dict'
+2022-08-25 00:02:59,667 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-25 17:59:16,906 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-25 17:59:19,351 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-25 17:59:20,405 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-25 17:59:20,558 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-25 17:59:20,730 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-26 07:07:38,331 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 63, in db_exec
+    with db_con() as con:
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-26 15:10:05,875 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-26 15:10:05,878 - aplikasi - ERROR - Exception on /master/data_bank [GET]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 169, in data_bank
+    message = data_bank.to_dict(orient='records')
+AttributeError: 'NoneType' object has no attribute 'to_dict'
+2022-08-26 16:09:01,468 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-26 16:42:06,913 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 63, in db_exec
+    with db_con() as con:
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-26 21:19:12,930 - root - ERROR - (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+Traceback (most recent call last):
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 49, in db_fetch
+    return pd.read_sql(sql, con=db_con(), params=param)
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 39, in db_con
+    g.bagi_pulsa = _connect_db()
+  File "/home/limaoper/bagi_pulsa/aplikasi/utils.py", line 15, in _connect_db
+    cursorclass=pymysql.cursors.DictCursor
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1130, "ursa.jagoanhosting.com' is not allowed to connect to this MariaDB server")
+2022-08-26 21:19:12,933 - aplikasi - ERROR - Exception on /master/status_provider [GET]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 79, in status_provider
+    data = data_status.to_dict(orient='records')
+AttributeError: 'NoneType' object has no attribute 'to_dict'
+2022-08-27 18:47:38,838 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-27 21:25:24,635 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 07:48:49,566 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 07:48:50,938 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 07:48:52,852 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 07:48:53,881 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 07:48:57,289 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 07:48:59,462 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 07:49:00,877 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 07:49:15,569 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 11:57:40,737 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 15:53:41,384 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 15:53:44,448 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 15:53:46,007 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 15:53:46,227 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 15:53:49,600 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 15:53:49,767 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 15:53:49,832 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 15:53:50,103 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 15:53:50,169 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-28 15:53:50,438 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-29 12:49:15,173 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-29 12:49:21,294 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-29 12:49:22,004 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
+2022-08-29 12:49:24,952 - aplikasi - ERROR - Exception on /master/post_akun_bank [POST]
+Traceback (most recent call last):
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/limaoper/virtualenv/bagi_pulsa/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/limaoper/bagi_pulsa/aplikasi/master/routes.py", line 300, in post_akun_bank
+    kode_bank = hsl_data_bank[0]['kode_bank']
+IndexError: list index out of range
